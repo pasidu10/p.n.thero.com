@@ -8,33 +8,85 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container nav-container">
-      <div class="logo">Punnānanda</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header 
+<div class="contact-box">
+  📞 Phone: +94 76 635 9869
+</div>
+<div class="contact-box">
+  📧 Email: pungyanamda.thero@gmail.com
+</div>
+<div class="contact-box">
+  💬 Telegram: @caming soon
+</div>
+<div class="contact-box">
+  🐙 GitHub: github.com/PASIYAv12
+</div>
+<div class="contact-box">
+  💚 <a href="https://wa.me/94766359869" target="_blank">WhatsApp Me</a>
+</div>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #2c003e, #20002c);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding: 20px;
+    }
 
-  <section class="section contact-section">
-    <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="grid">
-        <div class="card">📞 Phone: +94 78 454 8818</div>
-        <div class="card">✉️ Email: yourname@example.com</div>
-        <div class="card">💬 Telegram: @yourusername</div>
-        <div class="card">🐙 GitHub: github.com/PASIYAv12</div>
-      </div>
-    </div>
-  </section>
+    h2 {
+      text-align: center;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7;
+    }
+
+    .contact-box {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin: 15px 0;
+      box-shadow: 0 0 15px #00ffe1, 0 0 25px #00ffe1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact-box:hover {
+      box-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+    }
+
+    .contact-box a {
+      color: #00ffea;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-box span {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Contact Me</h2>
+
+  <div class="contact-box">
+    <span>📞</span> Phone: +94 76 635 9869
+  </div>
+  <div class="contact-box">
+    <span>📧</span> Email: pungyanamda.thero@gmail.com
+  </div>
+  <div class="contact-box">
+    <span>💬</span> Telegram: camingsoon
+  </div>
+  <div class="contact-box">
+    <span>🐙</span> GitHub: <a href="https://github.com/PASIYAv12" target="_blank">github.com/PASIYAv12</a>
+  </div>
+  <div class="contact-box">
+    <span>💚</span> <a href="https://wa.me/94766359869" target="_blank">WhatsApp Me</a>
+  </div>
 </body>
 </html>
-
+```
