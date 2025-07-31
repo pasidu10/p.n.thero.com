@@ -257,3 +257,28 @@ footer {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
 }
+
+
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+  position: relative;
+  color: #ffffff;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #00ffc8;
+  border-radius: 5px;
+  animation: glow-bar 2s infinite alternate;
+}
+
+@keyframes glow-bar {
+  0% { box-shadow: 0 0 5px #00ffc8; }
+  100% { box-shadow: 0 0 20px #00ffc8; }
+}
