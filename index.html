@@ -1,23 +1,28 @@
 
-<!DOCTYPE html>
-<html lang="en">
+
+  <section id="home" class="section home-section">
+    <div class="container home-content">
+      <h1 class="hero-title">Welcome, I'm <span class="glow">Punnānanda Thero</span></h1>
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Punnānanda Thero - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punnānanda | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://files.catbox.moe/j3gbf9.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
   <header class="header">
     <div class="container nav-container">
       <div class="logo">
-        <img src="https://files.catbox.moe/j3gbf9.jpg" alt="Logo" class="logo-img" />
+        <img src="https://files.catbox.moe/j3gbf9.jpg" alt="Logo" class="logo-img">
         <span>Punnānanda</span>
       </div>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="education.html">Education</a></li>
@@ -26,8 +31,11 @@
         </ul>
       </nav>
     </div>
-  </header>
-
-  <section id="home" class="section home-section">
-    <div class="container home-content">
-      <h1 class="hero-title">Welcome, I'm <span class="glow">Punnānanda Thero</span></h1>
+  </header>  <section class="section home-section">
+    <div class="container">
+      <h1 class="hero-title" data-aos="fade-down">Hi, I'm <span class="glow">Punnānanda Thero</span></h1>
+      <p class="hero-sub" data-aos="fade-up">I'm a Full Stack Developer, Mobile App Developer, Cybersecurity & AI/ML Engineer passionate about building secure and powerful software systems.</p>
+      <a href="about.html" class="btn-glow" data-aos="zoom-in">Explore My Work</a>
+    </div>
+  </section>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>AOS.init({ duration: 1000, once: true });</script></body>
+</html>
