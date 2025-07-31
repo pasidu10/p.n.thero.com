@@ -1,0 +1,51 @@
+/* Reset */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body { font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, #141e30, #243b55); color: #ffffff; line-height: 1.6; overflow-x: hidden; }
+
+.container { width: 90%; max-width: 1100px; margin: auto; padding: 40px 0; }
+
+/* Navigation */ header { background: rgba(0, 0, 0, 0.7); padding: 20px 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); position: sticky; top: 0; z-index: 1000; }
+
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 1.8rem; font-weight: bold; color: #00ffd5; }
+
+nav ul { display: flex; list-style: none; gap: 20px; }
+
+nav a { color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s; }
+
+nav a:hover { color: #00ffd5; transform: scale(1.05); }
+
+/* Hero Section */ .hero { text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #1e1e2f, #2c3e50); }
+
+.glow { color: #00ffd5; text-shadow: 0 0 15px #00ffd5; }
+
+.section { padding: 80px 0; background: linear-gradient(135deg, #161922, #1e2430); }
+
+.section-title { text-align: center; margin-bottom: 40px; }
+
+.section-title h2 { font-size: 2rem; font-weight: 700; color: #00ffd5; }
+
+.underline { width: 60px; height: 4px; background: #00ffd5; margin: 10px auto; border-radius: 5px; animation: grow 1.2s ease-in-out; }
+
+.card { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0, 255, 213, 0.1); backdrop-filter: blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.card:hover { transform: translateY(-5px); box-shadow: 0 0 25px rgba(0, 255, 213, 0.3); }
+
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+
+a { color: #00ffd5; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+@keyframes grow { from { width: 0; } to { width: 60px; } }
+
+@media (max-width: 768px) { nav ul { flex-direction: column; gap: 10px; }
+
+.hero h2 { font-size: 1.5rem; }
+
+.section-title h2 { font-size: 1.5rem; } }
+
