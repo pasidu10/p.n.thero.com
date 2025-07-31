@@ -502,3 +502,38 @@ footer {
   font-size: 0.9rem;
   opacity: 0.6;
   }
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: left;
+  animation: fadeInUp 1s ease-in-out;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #00ffc8;
+  margin-top: 8px;
+  animation: glow-bar 2s infinite alternate;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-bar {
+  0% { box-shadow: 0 0 5px #00ffc8; }
+  100% { box-shadow: 0 0 20px #00ffc8; }
+}
