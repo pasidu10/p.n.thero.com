@@ -192,3 +192,68 @@ footer {
   50% { transform: rotate(6deg); }
   75% { transform: rotate(-2deg); }
 }
+
+
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.08);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 40px rgba(0, 255, 200, 0.4), 0 0 80px rgba(0, 255, 200, 0.15);
+  transform: translateY(-5px) scale(1.02);
+  border-color: rgba(0, 255, 200, 0.6);
+}
+
+/* Glowing beam inside */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(0, 255, 200, 0.1), transparent);
+  transform: skewX(-20deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+/* Icon styling */
+.card h3 span {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  animation: bounce 2.5s infinite;
+}
+
+/* Text in card */
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Icon animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
