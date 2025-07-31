@@ -257,3 +257,126 @@ body { font-family: 'Outfit', sans-serif; line-height: 1.6; background: linear-g
   text-shadow: 0 0 12px #00fff7;
 }
 `
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: #1b1b3a;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: #12122a;
+  padding: 20px 0;
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-weight: 800;
+  font-size: 28px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-shadow: 0 0 8px #00f7ff;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #00f7ff;
+  color: #12122a;
+  box-shadow: 0 0 12px #00f7ff;
+}
+
+/* Home Section */
+.home-section {
+  padding: 120px 0 60px;
+  text-align: center;
+}
+
+/* Hero Title */
+.hero-title {
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Glow effect */
+.glow {
+  color: #00f7ff;
+  text-shadow:
+    0 0 5px #00f7ff,
+    0 0 10px #00f7ff,
+    0 0 20px #00f7ff,
+    0 0 40px #00f7ff;
+}
+
+/* Hero Subtitle */
+.hero-sub {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Glowing button */
+.btn-glow {
+  background-color: #00f7ff;
+  color: #12122a;
+  padding: 15px 40px;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow:
+    0 0 10px #00f7ff,
+    0 0 20px #00f7ff,
+    0 0 40px #00f7ff;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-glow:hover {
+  background-color: #00d6e8;
+  box-shadow:
+    0 0 15px #00d6e8,
+    0 0 30px #00d6e8,
+    0 0 50px #00d6e8;
+}
