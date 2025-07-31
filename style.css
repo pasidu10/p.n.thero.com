@@ -282,3 +282,84 @@ h1::after {
   0% { box-shadow: 0 0 5px #00ffc8; }
   100% { box-shadow: 0 0 20px #00ffc8; }
 }
+
+.card {
+  position: relative;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  border-radius: 20px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Animated glow on hover */
+.card:hover {
+  transform: scale(1.03);
+  border: 2px solid #00ffc8;
+  box-shadow: 0 0 30px #00ffc844, 0 0 60px #00ffc822;
+}
+
+/* Background shimmer glow */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #00ffc810 0%, transparent 70%);
+  animation: shimmer 5s infinite linear;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+/* Ensure content is above shimmer */
+.card h3, .card p, .card a {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.card a {
+  color: #00ffc8;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.card a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffc8;
+}
+
+/* Icon bounce */
+.card h3 span {
+  margin-right: 12px;
+  font-size: 1.4rem;
+  display: inline-block;
+  animation: bounce 2.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
