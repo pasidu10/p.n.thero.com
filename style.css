@@ -69,3 +69,30 @@ body { font-family: 'Outfit', sans-serif; line-height: 1.6; background: linear-g
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
+
+
+.skill-box {
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #00f2ff, #ff00ff, #00ff88) 1;
+  padding: 12px 20px;
+  margin: 12px 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-weight: 500;
+  animation: borderAnimation 3s infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.03);
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-image: linear-gradient(45deg, #00f2ff, #ff00ff, #00ff88) 1;
+  }
+  100% {
+    border-image: linear-gradient(45deg, #ff00ff, #00ff88, #00f2ff) 1;
+  }
+}
