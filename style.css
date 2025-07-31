@@ -569,3 +569,30 @@ h1::after {
   0% { box-shadow: 0 0 5px #00ffc8; }
   100% { box-shadow: 0 0 20px #00ffc8; }
 }
+
+
+/* Reset */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body { font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, #141e30, #243b55); color: #ffffff; line-height: 1.6; overflow-x: hidden; }
+
+.container { width: 90%; max-width: 1100px; margin: auto; padding: 40px 0; }
+
+/* Navigation */ header { background: rgba(0, 0, 0, 0.7); padding: 20px 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); position: sticky; top: 0; z-index: 1000; }
+
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 1.8rem; font-weight: bold; color: #00ffd5; }
+
+nav ul { display: flex; list-style: none; gap: 20px; }
+
+nav a { color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s; }
+
+nav a:hover { color: #00ffd5; transform: scale(1.05); }
+
+/* Hero Section */ .hero { text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #1e1e2f, #2c3e50); }
+
+.glow { color: #00ffd5
+
