@@ -380,3 +380,11 @@ body {
     0 0 30px #00d6e8,
     0 0 50px #00d6e8;
 }
+.home-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+              url('https://files.catbox.moe/j3gbf9.jpg') center/cover no-repeat fixed;
+  color: #fff;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
