@@ -57,4 +57,15 @@ body { font-family: 'Outfit', sans-serif; line-height: 1.6; background: linear-g
 
 .nav-links { flex-wrap: wrap; gap: 10px; } }
 
+.home-section {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #0f0c29);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  color: #fff;
+}
 
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
