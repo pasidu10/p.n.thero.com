@@ -49,3 +49,101 @@ a:hover { text-decoration: underline; }
 
 .section-title h2 { font-size: 1.5rem; } }
 
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punnānanda Thero - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">Punnānanda</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>  <!-- Home Section -->  <section id="home" class="section home-section">
+    <div class="container home-content">
+      <h1 class="hero-title">Welcome, I'm <span class="glow">Punnānanda Thero</span></h1>
+      <p class="hero-sub">A Software Engineer & Cybersecurity Expert passionate about creating secure digital futures.</p>
+      <a href="#contact" class="btn-glow">Let's Connect</a>
+    </div>
+  </section>  <!-- About Section -->  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>I am a Full Stack Developer and Cybersecurity Engineer with experience across frontend, backend, mobile apps, DevOps, and AI/ML systems. My focus is building secure, scalable, and modern applications that make a difference.</p>
+      </div>
+    </div>
+  </section>  <!-- Skills Section -->  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid">
+        <div class="card">HTML / CSS / JavaScript</div>
+        <div class="card">Python / Java / C++</div>
+        <div class="card">React / Vue / Angular</div>
+        <div class="card">Node.js / Express.js</div>
+        <div class="card">MongoDB / PostgreSQL / MySQL</div>
+        <div class="card">AWS / Firebase / Netlify</div>
+        <div class="card">Linux / Git / Docker</div>
+        <div class="card">Cybersecurity / Ethical Hacking</div>
+        <div class="card">AI / ML / TensorFlow</div>
+      </div>
+    </div>
+  </section>  <!-- Education Section -->  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="grid">
+        <div class="card">University of Moratuwa - Software Engineering</div>
+        <div class="card">IT Guru Global - Cybersecurity Engineering</div>
+        <div class="card">Full Stack Web Developer</div>
+        <div class="card">Mobile App Developer</div>
+        <div class="card">QA/Test Automation</div>
+        <div class="card">Frontend / Backend Developer</div>
+        <div class="card">DevOps & Cloud Engineer</div>
+        <div class="card">AI/ML Engineer</div>
+        <div class="card">Ethical Hacker</div>
+        <div class="card">Data Security Engineer</div>
+      </div>
+    </div>
+  </section>  <!-- Projects Section -->  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Binance Auto Trading Bot</h3>
+          <p>Telegram-controlled crypto bot with auto buy/sell signals & stop-loss logic integrated to Binance API.</p>
+        </div>
+        <div class="card">
+          <h3>DEMONS VIP Crypto Platform</h3>
+          <p>Professional trading platform with live updates, Firebase automation, and admin panel features.</p>
+        </div>
+        <div class="card">
+          <h3>Pirivena Web App</h3>
+          <p>Buddhist education-focused responsive website with gallery, contact, and developer credit page.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Contact Section -->  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="grid">
+        <div class="card">📞 +94 78 454 8818</div>
+        <div class="card">✉️ your-email@example.com</div>
+        <div class="card">💬 Telegram: @yourusername</div>
+        <div class="card">🐙 GitHub: github.com/PASIYAv12</div>
+      </div>
+    </div>
+  </section></body>
+</html>
