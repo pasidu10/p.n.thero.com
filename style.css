@@ -126,3 +126,25 @@ body { font-family: 'Outfit', sans-serif; line-height: 1.6; background: linear-g
     transform: translateY(0);
   }
 }
+  {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 12px 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+  box-shadow: 0 0 15px #ff3cac, 0 0 30px #4b39ef;
+}
+
+.skill-box span {
+  margin-right: 12px;
+  font-size: 20px;
+}
