@@ -388,3 +388,34 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-shadow: 0 0 8px #00f7ff;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #00f7ff;
+  color: #12122a;
+  box-shadow: 0 0 12px #00f7ff;
+}
