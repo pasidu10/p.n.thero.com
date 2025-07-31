@@ -136,3 +136,59 @@ footer {
   font-size: 0.9rem;
   opacity: 0.6;
 }
+
+/* Enhanced Education Card Effects */
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 5px solid #00ffc8;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px #00ffc822;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px #00ffc888, 0 0 50px #00ffc822;
+  border-left: 5px solid #ffffff;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #00ffc8 0%, transparent 60%);
+  animation: shimmer 6s linear infinite;
+  z-index: 0;
+  opacity: 0.04;
+}
+
+.card h3,
+.card p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Icon wiggle */
+.card h3 span {
+  display: inline-block;
+  animation: wiggle 2s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+  75% { transform: rotate(-2deg); }
+}
