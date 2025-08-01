@@ -29,3 +29,67 @@ img { max-width: 100%; height: auto; display: block; }
 
 .main-content { padding: 30px 20px !important; } }
 
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Punnānanda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://files.catbox.moe/j3gbf9.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    .about-section {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat fixed;
+      min-height: 100vh;
+      padding: 60px 40px;
+      color: #fff;
+    }
+    .about-content {
+      max-width: 800px;
+      margin-left: 270px;
+      padding-top: 40px;
+    }
+    .about-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ffff;
+    }
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    @media(max-width: 768px) {
+      .about-content {
+        margin: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://files.catbox.moe/j3gbf9.jpg" alt="Logo" class="logo-img">
+      <span>Punnānanda</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>  <section class="about-section">
+    <div class="about-content" data-aos="fade-up">
+      <h1 class="about-title">About Me</h1>
+      <p class="about-text">
+        I am Punnānanda Thero, a passionate and skilled Software Engineer and Cybersecurity Engineer. I specialize in Full Stack Web Development, Mobile App Development, Cloud & DevOps, Artificial Intelligence, Machine Learning, and Data Security. My journey began with a strong commitment to mastering both development and security to build powerful and secure digital systems.
+        <br><br>
+        I have studied at the University of Moratuwa and IT Guru Global Company. My mission is to deliver high-quality software solutions and contribute to the tech world with deep knowledge, integrity, and innovation.
+      </p>
+    </div>
+  </section>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>AOS.init({ duration: 1000, once: true });</script></body>
+</html>
