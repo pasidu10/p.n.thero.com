@@ -1,0 +1,31 @@
+/* Global Reset */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body { font-family: 'Outfit', sans-serif; line-height: 1.6; background-color: #0f0c29; color: #fff; overflow-x: hidden; }
+
+a { text-decoration: none; color: inherit; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Buttons */ .btn-glow { display: inline-block; padding: 12px 28px; background: #00ffff; color: #000; font-weight: bold; text-decoration: none; border-radius: 30px; box-shadow: 0 0 15px #00ffff; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.btn-glow:hover { transform: scale(1.05); box-shadow: 0 0 25px #00ffff; }
+
+/* Animations */ [data-aos] { opacity: 0; transition-property: opacity, transform; }
+
+/* Sections (custom backgrounds can be defined per page) */ .home-section, .about-section, .skills-section, .education-section, .projects-section, .contact-section { min-height: 100vh; padding: 60px 20px; }
+
+/* Responsive Fix */ @media screen and (max-width: 768px) { .logo span { font-size: 1.2rem; }
+
+.btn-glow { padding: 10px 24px; }
+
+.hero-title { font-size: 2rem !important; }
+
+.hero-sub { font-size: 1rem; }
+
+.nav-links li a { font-size: 0.95rem; }
+
+.main-content { padding: 30px 20px !important; } }
+
