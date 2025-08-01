@@ -220,3 +220,40 @@ footer {
   transform: translateX(5px);
   color: #00f2ff;
 }
+
+
+.whatsapp-box {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.whatsapp-btn {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 10px #25D366, 0 0 20px #128C7E;
+  transition: all 0.3s ease-in-out;
+  animation: pulseGlow 1.5s infinite;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #25D366, 0 0 30px #128C7E;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px #25D366, 0 0 20px #128C7E;
+  }
+  50% {
+    box-shadow: 0 0 20px #25D366, 0 0 30px #128C7E;
+  }
+  100% {
+    box-shadow: 0 0 10px #25D366, 0 0 20px #128C7E;
+  }
+}
+`
