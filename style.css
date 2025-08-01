@@ -280,26 +280,42 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-body {
-  background: linear-gradient(270deg, #0d1b2a, #1b263b, #415a77, #778da9);
-  background-size: 800% 800%;
-  animation: gradientShift 20s ease infinite;
-  color: white;
-  transition: background 0.5s;
+.box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00f2fe, 0 0 30px #4facfe;
+  margin: 30px auto;
+  max-width: 800px;
+  animation: fadeInUp 1.2s ease forwards;
+  backdrop-filter: blur(8px);
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about h2 {
+  color: #00f2fe;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #00f2fe;
+}
+
+#about p {
+  color: #e0f7fa;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+  text-shadow: 0 0 5px #00f2fe;
 }
 
 
