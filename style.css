@@ -279,3 +279,26 @@ footer {
   box-shadow: 0 6px 12px rgba(37, 211, 102, 0.7);
 }
 
+
+
+
+
+
+
+
+
+
+body {
+  background: linear-gradient(270deg, #0d1b2a, #1b263b, #415a77, #778da9);
+  background-size: 800% 800%;
+  animation: gradientShift 20s ease infinite;
+  color: white;
+  transition: background 0.5s;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
