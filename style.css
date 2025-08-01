@@ -302,3 +302,31 @@ footer {
   }
 }
 
+
+#about {
+  animation: colorShift 8s infinite alternate ease-in-out;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #a8dadc;
+  font-weight: 600;
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+  text-shadow: 0 0 5px #a8dadc;
+}
+
+@keyframes colorShift {
+  0% {
+    color: #a8dadc;
+    text-shadow: 0 0 5px #a8dadc;
+  }
+  50% {
+    color: #457b9d;
+    text-shadow: 0 0 15px #457b9d;
+  }
+  100% {
+    color: #1d3557;
+    text-shadow: 0 0 10px #1d3557;
+  }
+}
+
